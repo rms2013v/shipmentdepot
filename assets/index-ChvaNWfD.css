@@ -152,3 +152,7 @@
 .ms-badge b{font-size:14px;font-weight:600;letter-spacing:-.2px}
 .ms-badge i{font-style:normal;color:#9aa6b0;font-size:13px;margin-left:4px}
 @media (width<=760px){.footer-brand p{margin-left:0}}
+
+/* Feature rows: no arrow column (rows are not links) */
+.feature-row{grid-template-columns:70px 1.3fr 1fr}
+@media (width<=760px){.feature-row{grid-template-columns:35px 1fr}.feature-row p{grid-column:2/3}}
