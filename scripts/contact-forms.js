@@ -51,6 +51,38 @@
     btn.textContent = ctx.formSubmitButtonText || "Submit";
     btn.style.cssText = "display:inline-block;padding:13px 30px;border:0;border-radius:6px;background:#e4927a;color:#fff;font:inherit;font-weight:600;cursor:pointer;";
     form.appendChild(btn);
+
+    var err = document.createElement("p");
+    err.style.cssText = "display:none;margin:14px 0 0;color:#b3261e;font-size:14px;";
+    form.appendChild(err);
+
+    // Submit in the background so the visitor stays on this page.
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var label = btn.textContent;
+      btn.disabled = true; btn.textContent = "Sending…"; btn.style.opacity = "0.7";
+      err.style.display = "none";
+      var data = {};
+      new FormData(form).forEach(function (v, k) { data[k] = v; });
+      fetch("https://formsubmit.co/ajax/" + TO, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(data)
+      })
+        .then(function (r) { return r.json().then(function (j) { if (!r.ok || String(j.success) !== "true") throw new Error(j.message || "failed"); }); })
+        .then(function () {
+          var msg = document.createElement("div");
+          msg.setAttribute("role", "status");
+          msg.style.cssText = "max-width:640px;padding:28px 24px;border:1px solid #c7ccd6;border-radius:6px;background:#fff;";
+          msg.innerHTML = '<p style="margin:0;font-size:20px;font-weight:600;">Thank you, we will get back to you.</p>';
+          form.replaceWith(msg);
+        })
+        .catch(function () {
+          btn.disabled = false; btn.textContent = label; btn.style.opacity = "";
+          err.textContent = "Sorry, your message could not be sent. Please try again or email meet@shipmentdepot.com.";
+          err.style.display = "block";
+        });
+    });
     return form;
   }
 
