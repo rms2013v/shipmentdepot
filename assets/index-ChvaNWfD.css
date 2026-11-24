@@ -203,3 +203,26 @@
   .legal-toc li{break-inside:avoid}
 }
 @media (width<=520px){.legal-toc{columns:1}.legal-section h3{grid-template-columns:36px 1fr;font-size:19px}}
+
+/* ---- Logo: box mark + two-line wordmark ---- */
+.brand{display:inline-flex;align-items:center;letter-spacing:0}
+.sd-logo{display:inline-flex;align-items:center;gap:11px;line-height:1}
+.sd-logo-mark{width:40px;height:45px;flex:none;overflow:visible}
+.sd-face{fill:var(--ink)}
+.sd-strap{fill:none;stroke:#f5793f;stroke-width:5.6;stroke-linecap:round;stroke-linejoin:round}
+.sd-logo-word{display:grid;font-size:19px;font-weight:700;letter-spacing:-.6px;line-height:.98}
+.sd-logo-word span:first-child{color:var(--ink)}
+.sd-logo-word span:last-child{color:#3b6ef2}
+footer .sd-face{fill:#fff}
+footer .sd-logo-word span:first-child{color:#fff}
+footer .sd-logo-word span:last-child{color:#7d9cff}
+footer .sd-logo-mark{width:44px;height:50px}
+footer .sd-logo-word{font-size:21px}
+@media (width<=760px){.sd-logo-mark{width:34px;height:38px}.sd-logo-word{font-size:16.5px}.sd-logo{gap:9px}}
+/* Logo proportions tuned to the supplied artwork */
+.sd-logo{gap:17px}
+.sd-logo-mark{width:37px;height:42px}
+.sd-logo-word{font-size:23px;font-weight:600;letter-spacing:-.7px;line-height:1.02}
+footer .sd-logo-mark{width:41px;height:46px}
+footer .sd-logo-word{font-size:25px}
+@media (width<=760px){.sd-logo{gap:12px}.sd-logo-mark{width:30px;height:34px}.sd-logo-word{font-size:18.5px}}
