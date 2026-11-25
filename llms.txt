@@ -1,0 +1,20 @@
+# Shipment Depot
+
+> Shipment Depot provides plug-and-play integration between Microsoft Dynamics 365 Supply Chain Management and shipping carriers (UPS, FedEx, USPS, DHL, Purolator, Canada Post): rate shopping, label generation, address validation and tracking inside D365.
+
+## Pages
+
+- [D365 Shipping Integration for UPS, FedEx & More](https://www.shipmentdepot.com/): Shipment Depot connects Dynamics 365 Supply Chain Management to UPS, FedEx, USPS, DHL, Purolator and Canada Post for rate shopping, labels and tracking.
+- [D365 UPS Integration: Rates, Labels & Tracking](https://www.shipmentdepot.com/d365-ups-integration): Connect UPS to Dynamics 365 Supply Chain Management. Compare UPS rates, print labels and track shipments without leaving D365.
+- [D365 FedEx Integration: Rates, Labels & Tracking](https://www.shipmentdepot.com/d365-fedex-integration): Connect FedEx to Dynamics 365 Supply Chain Management. Compare FedEx rates, print labels and track shipments without leaving D365.
+- [Multi-Carrier Shipping Solutions for Dynamics 365](https://www.shipmentdepot.com/solutions): Rate shopping, label generation, address validation and tracking for UPS, FedEx, USPS, DHL and more, all inside your Dynamics 365 workflow.
+- [Partner Program for Dynamics 365 Consultants](https://www.shipmentdepot.com/partners): Partner with Shipment Depot to bring carrier integration and D365 shipping expertise to your Dynamics 365 projects and clients.
+- [Free 30-Day Trial: Dynamics 365 Shipping Integration](https://www.shipmentdepot.com/free-trial): Try Shipment Depot free for 30 days. Connect Dynamics 365 to the carriers you already use and run real shipping workflows before you commit.
+- [Contact Us & Request a Demo](https://www.shipmentdepot.com/contact-us): Questions about Shipment Depot, pricing or carriers? Request a demo or send us a message and a Dynamics 365 shipping expert will reply.
+- [Request a Demo of Shipment Depot for Dynamics 365](https://www.shipmentdepot.com/request-demo): Book a live demo and see how Shipment Depot connects Dynamics 365 to UPS, FedEx and every carrier your operation depends on.
+- [Become a Shipment Depot Partner](https://www.shipmentdepot.com/partner-with-us): Tell us about your Dynamics 365 practice and how Shipment Depot can help your clients with carrier integration and D365 shipping.
+- [Privacy Policy & Terms and Conditions](https://www.shipmentdepot.com/privacy-policy): How Shipment Depot collects, uses and protects your information, and the terms and conditions for using our website and services.
+
+## Elsewhere
+
+- [Shipment Depot on Microsoft Marketplace](https://marketplace.microsoft.com/en-us/product/shipmentdepot.shipment_depot?tab=overview)
